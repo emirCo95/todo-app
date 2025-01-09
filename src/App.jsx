@@ -36,7 +36,8 @@ const App = () => {
         {taskList.map((task, idx) => {
           return (
             <div key={idx} className="w-[500px] flex justify-start gap-2 my-1">
-              <div className="w-[300px] h-[50px] bg-gray-200 flex justify-start px-2 items-center rounded-md text-xl">
+              <div className="w-[300px] h-[50px] bg-gray-200 flex justify-start gap-3 px-5 items-center rounded-md text-xl">
+                <input type="checkbox" />
                 {task}
               </div>
               <button
