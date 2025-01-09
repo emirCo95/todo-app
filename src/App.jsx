@@ -34,7 +34,10 @@ const App = () => {
             <div className="w-[300px] h-[50px] bg-gray-200 flex justify-start px-2 items-center rounded-md text-xl">
               {task}
             </div>
-            <button className="h-[50px] w-[150px] rounded-md p-3 bg-black text-white">
+            <button
+              onClick={handleDeleteTask}
+              className="h-[50px] w-[150px] rounded-md p-3 bg-black text-white"
+            >
               Delete
             </button>
           </div>
